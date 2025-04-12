@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Neural Chat</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
+</head>
+<body class="dark">
+  <div class="theme-toggle">
+    <button onclick="setTheme('dark')">🌙</button>
+    <button onclick="setTheme('light')">☀️</button>
+    <button onclick="setTheme('cyber')">👾</button>
+  </div>
+
+  <div class="container">
+    <h1>Neural Chat 🤖</h1>
+    <textarea id="prompt" placeholder="Введите сообщение..."></textarea>
+    <button onclick="sendPrompt()">Отправить</button>
+    <div id="response"></div>
+  </div>
+
+  <footer>© 2025 Neural Interface</footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
