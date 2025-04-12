@@ -8,3 +8,4 @@ aiofiles
 pdfminer.six
 python-docx
 requests
+wikipedia-api
