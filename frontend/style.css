@@ -1,75 +1,38 @@
+
 body {
-  margin: 0;
-  font-family: 'JetBrains Mono', monospace;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  transition: background 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+    background: #1e1e1e;
+    color: #fff;
+    padding: 20px;
 }
-
-.container {
-  max-width: 600px;
-  margin: auto;
-  padding: 2rem;
-  text-align: center;
+textarea, input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
 }
-
-textarea {
-  width: 100%;
-  height: 100px;
-  padding: 1rem;
-  font-size: 1rem;
-  border-radius: 10px;
-}
-
 button {
-  margin-top: 1rem;
-  padding: 0.75rem 2rem;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 8px;
+    padding: 10px;
+    margin-top: 10px;
 }
-
-#response {
-  margin-top: 2rem;
-  padding: 1rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
+.tab-button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 5px;
+    cursor: pointer;
 }
-
-/* Footer */
-footer {
-  margin-top: auto;
-  padding: 1rem;
-  font-size: 0.9rem;
-  opacity: 0.6;
+.tab-button.active {
+    background: #555;
 }
-
-/* Themes */
-body.dark {
-  background: #121212;
-  color: #f0f0f0;
+.tab-content {
+    display: none;
+    margin-top: 20px;
 }
-body.light {
-  background: #f9f9f9;
-  color: #222;
+.tab-content.active {
+    display: block;
 }
-body.cyber {
-  background: linear-gradient(135deg, #000428, #004e92);
-  color: #00ffe1;
-}
-body.cyber button {
-  background-color: #00ffe1;
-  color: #000;
-}
-
-/* Theme toggle buttons */
-.theme-toggle {
-  position: fixed;
-  top: 10px;
-  right: 10px;
-}
-.theme-toggle button {
-  margin-left: 5px;
+img {
+    margin-top: 20px;
+    max-width: 100%;
 }

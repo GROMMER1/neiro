@@ -1,28 +1,40 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Neural Chat</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <title>Нейро-Чат и Генерация</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="dark">
-  <div class="theme-toggle">
-    <button onclick="setTheme('dark')">🌙</button>
-    <button onclick="setTheme('light')">☀️</button>
-    <button onclick="setTheme('cyber')">👾</button>
-  </div>
+<body>
+    <div class="tabs">
+        <button class="tab-button active" onclick="showTab('text-tab')">Чат</button>
+        <button class="tab-button" onclick="showTab('image-tab')">Изображение</button><button class="tab-button" onclick="showTab('upload-tab')">Загрузить</button>
+    </div>
 
-  <div class="container">
-    <h1>Neural Chat 🤖</h1>
-    <textarea id="prompt" placeholder="Введите сообщение..."></textarea>
-    <button onclick="sendPrompt()">Отправить</button>
-    <div id="response"></div>
-  </div>
+    <div id="text-tab" class="tab-content active">
+        <h1>Нейросетевой Чат</h1>
+        <textarea id="chat-input" placeholder="Введите сообщение..."></textarea>
+        <button onclick="sendChat()">Отправить</button>
+        <div id="chat-response"></div>
+    </div>
 
-  <footer>© 2025 Neural Interface</footer>
+    <div id="image-tab" class="tab-content">
+        <h1>Генерация Изображения</h1>
+        <input type="text" id="image-prompt" placeholder="Введите описание изображения..." />
+        <button onclick="generateImage()">Сгенерировать</button>
+        <div id="image-result"></div>
+    
+    </div>
 
-  <script src="app.js"></script>
+    <div id="upload-tab" class="tab-content">
+        <h1>Загрузка изображения</h1>
+        <input type="file" id="upload-file">
+        <button onclick="uploadImage()">Загрузить и обработать</button>
+        <div id="upload-result"></div>
+    </div>
+
+    <script src="app.js"></script>
+
 </body>
 </html>
