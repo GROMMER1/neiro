@@ -1,0 +1,6 @@
+fastapi==0.100.0
+uvicorn==0.22.0
+torch>=1.13
+torchvision
+pillow
+numpy
