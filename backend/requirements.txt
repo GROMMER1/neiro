@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+torch
+transformers
+scikit-learn
+numpy
+pydantic
+requests
+langdetect
+wikipedia-api
+PyPDF2
+python-docx
+datasets
